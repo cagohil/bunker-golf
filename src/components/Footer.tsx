@@ -9,11 +9,11 @@ export default function Footer() {
         <div className={styles.brand}>
           <Image src="/trackman-footer-logo-two.png" alt="The Bunker Golf Sim" width={250} height={150} style={{ objectFit: 'contain' }} />
           <p className={styles.tagline}>The Ultimate Indoor Golf Experience.</p>
-          <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem' }}>
-            <a href="https://www.facebook.com/people/The-Bunker-Golf-Sim/61578294387830/" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8' }} aria-label="Facebook">
+          <div style={{ display: 'flex', gap: '1.5rem', marginTop: '2rem' }}>
+            <a href="https://www.facebook.com/people/The-Bunker-Golf-Sim/61578294387830/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Facebook">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
             </a>
-            <a href="https://www.instagram.com/bunkergolfsim/" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8' }} aria-label="Instagram">
+            <a href="https://www.instagram.com/bunkergolfsim/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Instagram">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
           </div>

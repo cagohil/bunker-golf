@@ -19,7 +19,7 @@ export default function ContactUs() {
         </div>
       </div>
 
-      <h2 className="text-center" style={{ marginBottom: '2rem' }}>Our Locations</h2>
+      <h2 className="text-center" style={{ marginBottom: '2rem', marginTop: '2rem' }}>Our Locations</h2>
       
       <div className="grid grid-cols-2" style={{ gap: '2rem' }}>
         <div>
