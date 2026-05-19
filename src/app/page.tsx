@@ -104,7 +104,7 @@ export default function Home() {
               <h3 className={styles.locationTitle}>Bloomfield Township</h3>
               <p className={styles.locationAddress}>43207 Woodward Avenue<br />Bloomfield Township, MI 48302</p>
               <Button href="https://yourgolfbooking.com/venues/the-bunker-2/booking" target="_blank" rel="noopener noreferrer" variant="secondary">
-                Reserve Bay
+                Book
               </Button>
             </motion.div>
 
@@ -118,7 +118,7 @@ export default function Home() {
               <h3 className={styles.locationTitle}>Lake Orion</h3>
               <p className={styles.locationAddress}>784 S Lapeer Rd<br />Lake Orion, MI</p>
               <Button href="https://yourgolfbooking.com/venues/the-bunker-2/booking" target="_blank" rel="noopener noreferrer" variant="secondary">
-                Reserve Bay
+                Book
               </Button>
             </motion.div>
           </div>
