@@ -26,6 +26,19 @@
 .logo {
   display: flex;
   align-items: center;
+  height: 100%;
+}
+
+.logo img {
+  height: 2.5rem !important;
+  width: auto !important;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .logo img {
+    height: 3.5rem !important;
+  }
 }
 
 .desktopMenu {

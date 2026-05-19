@@ -22,7 +22,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo}>
-          <Image src="/logo.svg" alt="The Bunker Golf Sim" width={200} height={120} style={{ objectFit: 'contain' }} />
+          <Image src="/logo.svg" alt="The Bunker Golf Sim" width={140} height={42} style={{ objectFit: 'contain' }} />
         </Link>
 
         <div className={styles.desktopMenu}>

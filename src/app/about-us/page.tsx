@@ -3,7 +3,7 @@ import Button from '@/components/Button';
 
 export default function AboutUs() {
   return (
-    <div className="container section">
+    <div className="container section pt-safe">
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         <h1 className="text-center" style={{ color: 'var(--accent)', marginBottom: '2rem' }}>About The Bunker</h1>
         

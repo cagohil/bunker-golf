@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Leagues() {
   return (
-    <div className="container section">
+    <div className="container section pt-safe">
       <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
         <h1 style={{ color: 'var(--accent)', marginBottom: '2rem' }}>Leagues</h1>
         
