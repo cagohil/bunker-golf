@@ -1,32 +1,50 @@
 .footer {
   background-color: var(--primary);
-  border-top: 1px solid var(--border);
-  padding-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 6rem;
   margin-top: auto;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
 }
 
 .footerGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
-  margin-bottom: 3rem;
+  gap: 4rem;
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 768px) {
   .footerGrid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr 1fr;
   }
 }
 
 .brand .tagline {
-  margin-top: 1rem;
-  color: #94a3b8;
+  margin-top: 1.5rem;
+  color: #A3A8B3;
+  font-size: 1.1rem;
+  font-weight: 300;
+  max-width: 300px;
 }
 
 .links h3, .contact h3 {
+  font-family: var(--font-display);
   font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   color: var(--foreground);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .links ul {
@@ -35,31 +53,67 @@
 }
 
 .links li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .links a {
-  color: #94a3b8;
-  transition: color 0.2s;
+  color: #A3A8B3;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+  display: inline-block;
 }
 
 .links a:hover {
-  color: var(--accent);
+  color: var(--foreground);
+  padding-left: 0.5rem;
 }
 
 .contact p {
-  color: #94a3b8;
-  margin-bottom: 0.5rem;
+  color: #A3A8B3;
+  margin-bottom: 1rem;
+  font-weight: 300;
 }
 
 .contact a {
-  color: var(--accent);
+  color: var(--foreground);
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.contact a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--foreground);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.socialIcon {
+  color: #A3A8B3;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.socialIcon:hover {
+  color: var(--foreground);
+  transform: translateY(-2px);
 }
 
 .bottom {
   text-align: center;
-  padding: 1.5rem 0;
-  border-top: 1px solid var(--border);
-  color: #64748b;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #5A606A;
   font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
 }
