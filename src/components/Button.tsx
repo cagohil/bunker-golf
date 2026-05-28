@@ -8,9 +8,10 @@ interface ButtonProps {
   className?: string;
   target?: string;
   rel?: string;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export default function Button({ href, children, variant = 'primary', className = '', target, rel }: ButtonProps) {
+export default function Button({ href, children, variant = 'primary', className = '', target, rel, onClick }: ButtonProps) {
   const btnClass = `${styles.button} ${styles[variant]} ${className}`;
   if (href) {
     return (
@@ -19,5 +20,9 @@ export default function Button({ href, children, variant = 'primary', className 
       </Link>
     );
   }
-  return <button className={btnClass}>{children}</button>;
+  return (
+    <button className={btnClass} onClick={onClick}>
+      {children}
+    </button>
+  );
 }

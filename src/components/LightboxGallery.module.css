@@ -124,8 +124,101 @@
 .prevBtn { left: 2rem; }
 .nextBtn { right: 2rem; }
 
+/* Filter Tabs Styles */
+.tabsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.tabBtn {
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-border);
+  color: #A3A8B3;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tabBtn:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  color: var(--foreground);
+  transform: translateY(-2px);
+}
+
+.activeTab {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--background);
+  font-weight: 500;
+}
+
+.activeTab:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--background);
+}
+
+/* See More / See Less Styles */
+.seeMoreContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.seeMoreBtn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.seeMoreBtn:hover {
+  background: var(--accent);
+  color: var(--background);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(209, 232, 213, 0.2);
+}
+
+.seeMoreBtn:active {
+  transform: translateY(-1px);
+}
+
 @media (max-width: 768px) {
   .prevBtn { left: 1rem; width: 3rem; height: 3rem; }
   .nextBtn { right: 1rem; width: 3rem; height: 3rem; }
   .closeBtn { top: 1rem; right: 1rem; width: 2.5rem; height: 2.5rem; }
+  .tabsContainer {
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .tabBtn {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9rem;
+  }
+  .seeMoreContainer {
+    margin-top: 2.5rem;
+  }
+  .seeMoreBtn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
 }

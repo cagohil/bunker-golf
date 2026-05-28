@@ -24,7 +24,7 @@ export default function HowItWorks() {
               <p>✅ When your session ends, the code will automatically expire.</p>
             </div>
             <div style={{ flex: '1 1 250px', position: 'relative', height: '300px', borderRadius: '0.5rem', overflow: 'hidden' }}>
-              <Image src="/booking_online_1779046542059.png" alt="Booking Online" fill style={{ objectFit: 'cover' }} />
+              <Image src="/booking-image.png" alt="Booking Online" fill style={{ objectFit: 'cover' }} />
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function HowItWorks() {
           <h2 style={{ color: 'var(--foreground)' }}>2. No On-Site Staff</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap-reverse', gap: '2rem', alignItems: 'center' }}>
             <div style={{ flex: '1 1 250px', position: 'relative', height: '300px', borderRadius: '0.5rem', overflow: 'hidden' }}>
-              <Image src="/facility_entrance_1779046620335.png" alt="Facility Entrance" fill style={{ objectFit: 'cover' }} />
+              <Image src="/media-images/lake-orion/04.jpg" alt="Facility Entrance" fill style={{ objectFit: 'cover' }} />
             </div>
             <div style={{ flex: '1 1 300px' }}>
               <p>Our facility is fully automated and operates WITHOUT on-site employees. Because of this, everything—from booking to access—is managed remotely.</p>
@@ -59,7 +59,7 @@ export default function HowItWorks() {
               <p style={{ marginTop: '1rem', fontStyle: 'italic', color: '#94a3b8' }}>*We do not have rental clubs. All guests are responsible for bringing their own clubs.</p>
             </div>
             <div style={{ flex: '1 1 250px', position: 'relative', height: '350px', borderRadius: '0.5rem', overflow: 'hidden' }}>
-              <Image src="/simulator_bay_1779046651975.png" alt="Simulator Bay" fill style={{ objectFit: 'cover' }} />
+              <Image src="/media-images/lake-orion/18.jpg" alt="Simulator Bay" fill style={{ objectFit: 'cover' }} />
             </div>
           </div>
         </div>

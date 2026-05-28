@@ -40,7 +40,7 @@ export default function ContactUs() {
 
         <div>
           <h3 style={{ color: 'var(--accent)', marginBottom: '1rem' }}>Lake Orion</h3>
-          <p style={{ color: '#cbd5e1', marginBottom: '1rem' }}>784 S Lapeer Rd, Lake Orion, MI</p>
+          <p style={{ color: '#cbd5e1', marginBottom: '1rem' }}>784 S Lapeer Rd, Orion Township, MI 48362</p>
           <div style={{ borderRadius: '0.5rem', overflow: 'hidden', border: '1px solid var(--border)' }}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2928.7911929166025!2d-83.2420486251128!3d42.77162110900293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824ecdaacc07213%3A0x17f9e0155f94254a!2s784%20S%20Lapeer%20Rd%2C%20Orion%20Township%2C%20MI%2048362%2C%20USA!5e0!3m2!1sen!2sin!4v1779045648211!5m2!1sen!2sin"
