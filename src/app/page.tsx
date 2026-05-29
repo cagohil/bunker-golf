@@ -115,7 +115,7 @@ export default function Home() {
             <Button href="https://yourgolfbooking.com/venues/the-bunker-2/booking" target="_blank" rel="noopener noreferrer">
               Book Bloomfield Township
             </Button>
-            <Button href="https://yourgolfbooking.com/venues/the-bunker-2/booking" target="_blank" rel="noopener noreferrer" variant="outline">
+            <Button href="https://yourgolfbooking.com/venues/the-bunker-orion-twp/booking" target="_blank" rel="noopener noreferrer" variant="outline">
               Book Lake Orion
             </Button>
           </motion.div>

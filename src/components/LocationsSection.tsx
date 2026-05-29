@@ -34,7 +34,7 @@ const LOCATIONS_DATA: LocationInfo[] = [
     title: 'Lake Orion',
     addressLine1: '784 S Lapeer Rd',
     addressLine2: 'Orion Township, MI 48362',
-    bookingUrl: 'https://yourgolfbooking.com/venues/the-bunker-2/booking',
+    bookingUrl: 'https://yourgolfbooking.com/venues/the-bunker-orion-twp/booking',
     videoSrc: '/videos/lake-orion-video.mp4',
     videoType: 'local',
     thumbnailSrc: '/media-images/lake-orion/01.jpg',

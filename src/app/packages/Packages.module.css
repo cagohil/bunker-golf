@@ -1,0 +1,129 @@
+.packagesSection {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+
+.title {
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 300;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  margin-bottom: 4rem;
+  color: #A3A8B3;
+  text-align: center;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.packageCard {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 2rem;
+  border: 1px solid var(--glass-border);
+  padding: 2.5rem;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.packageCard:hover {
+  transform: translateY(-8px);
+  background: rgba(15, 18, 21, 0.85);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.thumbnail {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  object-fit: cover;
+}
+
+.packageCard:hover .thumbnail {
+  transform: scale(1.04);
+}
+
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.packageTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.packageDescription {
+  font-size: 1.05rem;
+  color: #A3A8B3;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.buttonGroup > * {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 550px;
+    margin: 0 auto;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .packagesSection {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .packageCard {
+    padding: 1.75rem;
+    border-radius: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .packageTitle {
+    font-size: 1.6rem;
+  }
+}
