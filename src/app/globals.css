@@ -4,15 +4,16 @@
   --foreground: #FAFAFA;
   --primary: #0F1215;
   --primary-hover: #1A1E24;
-  --accent: #D1E8D5; /* Pale Sage Green */
+  --accent: #D1E8D5;
+  /* Pale Sage Green */
   --accent-hover: #E8F5E9;
   --border: #1F252B;
-  
+
   --font-display: var(--font-outfit), sans-serif;
   --font-sans: var(--font-dm-sans), sans-serif;
-  
+
   --max-width: 1440px;
-  
+
   /* Glassmorphism tokens */
   --glass-bg: rgba(15, 18, 21, 0.6);
   --glass-border: rgba(255, 255, 255, 0.05);
@@ -46,21 +47,36 @@ button {
   font-family: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-display);
-  font-weight: 400; /* Minimalist modern often uses lighter weights for display */
+  font-weight: 400;
+  /* Minimalist modern often uses lighter weights for display */
   line-height: 1.1;
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
 }
 
-h1 { font-size: 4rem; }
-h2 { font-size: 3rem; }
-h3 { font-size: 2rem; }
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
 
 p {
   margin-bottom: 1.5rem;
-  color: #A3A8B3; /* Softer, elegant muted text */
+  color: #A3A8B3;
+  /* Softer, elegant muted text */
   font-weight: 300;
   font-size: 1.125rem;
 }
@@ -79,6 +95,7 @@ p {
 
 .pt-safe {
   padding-top: 140px !important;
+  padding-bottom: 100px !important;
 }
 
 @media (min-width: 768px) {
@@ -86,16 +103,26 @@ p {
     padding-top: 12rem;
     padding-bottom: 8rem;
   }
+
   .pt-safe {
     padding-top: 180px !important;
+    padding-bottom: 100px !important;
   }
 }
 
 @media (max-width: 768px) {
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 2rem; }
-  h3 { font-size: 1.5rem; }
-  
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
   .container {
     padding: 0 1.5rem;
   }
@@ -129,6 +156,7 @@ p {
   .card {
     padding: 3rem;
   }
+
   .mb-lg {
     margin-bottom: 5rem;
   }
@@ -159,13 +187,16 @@ p {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--background);
 }
+
 ::-webkit-scrollbar-thumb {
   background: #2a313a;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #3a434f;
 }

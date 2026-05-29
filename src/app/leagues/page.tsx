@@ -7,7 +7,7 @@ export default function Leagues() {
         <h1 style={{ color: 'var(--accent)', marginBottom: '2rem' }}>Leagues</h1>
 
         <div style={{ position: 'relative', width: '100%', height: '450px', borderRadius: '1rem', overflow: 'hidden', marginBottom: '3rem', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.5)' }}>
-          <Image src="/leagues.png" alt="Indoor Golf Leagues" fill style={{ objectFit: 'cover' }} />
+          <Image src="/leagues-img-1.jpeg" alt="Indoor Golf Leagues" fill style={{ objectFit: 'cover' }} />
         </div>
 
         <h2 style={{ fontSize: '1.75rem', marginBottom: '1.5rem', color: '#f8fafc' }}>
@@ -21,6 +21,11 @@ export default function Leagues() {
           <p style={{ marginBottom: '1.5rem' }}>
             Whether you’re organizing a company outing, a weekly friends league, or a seasonal competition, we’ll handle the setup so you can focus on having fun.
           </p>
+
+          <div style={{ position: 'relative', width: '100%', height: '450px', borderRadius: '1rem', overflow: 'hidden', marginBottom: '3rem', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.5)' }}>
+            <Image src="/leagues-img-2.jpeg" alt="Indoor Golf Leagues" fill style={{ objectFit: 'cover' }} />
+          </div>
+
           <p style={{ marginBottom: '1.5rem' }}>
             Choose from a variety of world-class courses, track your stats, and compete in a relaxed, social environment. Leagues can be customized for individual or team play, with flexible scheduling to fit your group’s needs.
           </p>
